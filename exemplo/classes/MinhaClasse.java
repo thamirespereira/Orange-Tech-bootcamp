@@ -6,6 +6,14 @@ public class MinhaClasse {
  */
 public static void main(String [] args) throws Exception {
 
-        System.out.println("Olá, mundo :D"); }
+        String primeiroNome = "Thamires";
+        String segundoNome = "Pereira";
 
+        String nomeCompleto = nomeCompleto (primeiroNome, segundoNome, " ");
+
+        System.out.println(nomeCompleto); }
+
+public static String nomeCompleto (String primeiroNome, String segundoNome, String string) {
+        return primeiroNome.concat(" ").concat(segundoNome);
+}
 }
