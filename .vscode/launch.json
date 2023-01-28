@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BoletimEstudantil",
+            "request": "launch",
+            "mainClass": "BoletimEstudantil",
+            "projectName": "Orange-Tech-bootcamp_f2b8094d"
+        },
+        {
+            "type": "java",
             "name": "Launch MinhaClasse",
             "request": "launch",
             "mainClass": "MinhaClasse",
