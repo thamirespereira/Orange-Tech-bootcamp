@@ -6,9 +6,15 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "Launch condicional",
             "request": "launch",
             "mainClass": "exemplo.operadores.condicional",
+=======
+            "name": "Launch BoletimEstudantil",
+            "request": "launch",
+            "mainClass": "BoletimEstudantil",
+>>>>>>> 96a88097cf9a1e3e2daaf5936e0454fb9edbd068
             "projectName": "Orange-Tech-bootcamp_f2b8094d"
         },
         {
