@@ -12,8 +12,10 @@ public class NomeEIdade {
      * @param args
      */
     public static void main(String[] args) {
+
+        
         try (Scanner scan = new Scanner(System.in)) {
-            int idade = 0;
+            int idade;
             String nome = "";
             
             while (true) {
@@ -22,13 +24,16 @@ public class NomeEIdade {
 
                 if (nome.equals("0")) break;
 
-                System.out.println("Idade: ");
+                System.out.println("Idade: " );
                 idade = scan.nextInt();
-                
+
+                if (idade == 0) break;
+            
             }
         }
 
         System.out.println("Fim do programa");
+        
     }
 
     
