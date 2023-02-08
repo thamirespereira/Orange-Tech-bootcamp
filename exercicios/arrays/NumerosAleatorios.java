@@ -23,6 +23,6 @@ public class NumerosAleatorios {
         System.out.print("\nAntecessor dos Números aleatórios: ");
         for (int numero : numerosAleatorios) {
             System.out.print((numero - 1) + " ");
+        }
     }
-}
 }
