@@ -8,25 +8,25 @@ import java.util.Scanner;
 
 public class MaiorEMedia {
     public static void main(String[] args){
-        try (Scanner scan = new Scanner(System.in)) {
-            int numero;
-            int contador = 0;
-            int maior = 0;
-            int soma = 0;
+        Scanner scan = new Scanner(System.in);
+        int numero;
+        int contador = 0;
+        int maior = 0;
+        int soma = 0;
 
-            do {
-                System.out.println("Número: ");
-                numero = scan.nextInt();
+        do {
+            System.out.println("Número: ");
+            numero = scan.nextInt();
 
-                soma = soma + numero;
+            soma = soma + numero;
 
-                if (numero > maior) maior = numero;
+            if (numero > maior) maior = numero;
                     
-                contador = contador + 1;
-            } while (contador < 5);
+            contador = contador + 1;
+        } while (contador < 5);
 
-            System.out.println("Maior número: " + maior);
-            System.out.println("Média: " + (soma/5));
-        }
+        System.out.println("Maior número: " + maior);
+        System.out.println("Média: " + (soma/5));
+        scan.close();
     }
 }
