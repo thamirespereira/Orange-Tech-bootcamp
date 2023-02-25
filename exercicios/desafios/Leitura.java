@@ -13,6 +13,7 @@ public class Leitura {
         
         System.out.println(dias + " dias");
         leitor.close();
+        
     }
     
 }

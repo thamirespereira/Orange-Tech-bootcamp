@@ -15,7 +15,7 @@ public class Multas {
         else 
           System.out.println("Nao foi multado");
         
-        // TODO: Crie a condição necessária para verificar se o motorista, de acordo com a entrada, foi multado ou não.
+        //Crie a condição necessária para verificar se o motorista, de acordo com a entrada, foi multado ou não.
         leitor.close();
     }
 }

@@ -14,7 +14,7 @@ public class Lojinha {
         System.out.println("O cliente obteve " + quantidadeDeDoces + " doces");
         
         leitor.close();
-        // TODO: Crie a condição necessária para que cada cliente saiba quantos doces vai obter de acordo com a entrada
+        // Crie a condição necessária para que cada cliente saiba quantos doces vai obter de acordo com a entrada
 
     }
 }

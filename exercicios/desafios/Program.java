@@ -14,7 +14,7 @@ import java.util.Scanner;
 
         leitor.close();
 
-    //TODO: Crie a condição necessária para que o sobrinho saiba quanto dinheiro irá juntar nos meses da entrada
+    //Crie a condição necessária para que o sobrinho saiba quanto dinheiro irá juntar nos meses da entrada
 
     }
 }
