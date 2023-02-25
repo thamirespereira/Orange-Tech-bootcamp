@@ -15,5 +15,10 @@ public class rodarAplicacaoFuncionario {
         //Gerente gerente2 = new Funcionario(); (forma errada)
         Vendedor vendedor2 = (Vendedor) new  Funcionario();
         
+        System.out.println(vendedor1);
+        System.out.println(vendedor2);
+        System.out.println(faxineiro);
+        System.out.println(funcionario);
+        System.out.println(gerente);
     }
 }
