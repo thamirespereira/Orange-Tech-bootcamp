@@ -1,4 +1,14 @@
-package exercicios.collections.Set
+package exercicios.collections.List.Set;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
 
 /*
 Crie uma conjunto contendo as cores do arco-íris e:
