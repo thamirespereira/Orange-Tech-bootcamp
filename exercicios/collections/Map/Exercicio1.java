@@ -1,7 +1,12 @@
 package exercicios.collections.Map;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Exercicio1 {
     /*
@@ -37,6 +42,62 @@ public static void main(String[] args) {
     System.out.println();
 
     System.out.println("Exiba a população do estado PE: " + populacaoEstados.get("PE"));
+    System.out.println();
+
+    System.out.println("Exiba todos os estados e suas populaçãos na ordem em que foram informados: ");
+    Map<String, Integer> populacaoEstado2 = new LinkedHashMap<>(){{
+        put ("PE", 9616621);
+        put ("AL", 3351543);
+        put ("CE", 9187103);
+        put ("RN", 3534265);
+        put ("PB", 4039277);
+    }};
+    System.out.println(populacaoEstado2.toString());
+    System.out.println();
+
+    System.out.println("Exiba todos os estados e suas populações na ordem alfabética: ");
+    Map<String, Integer> populacaoEstados3 = new TreeMap<>(populacaoEstados);
+    System.out.println(populacaoEstados3);
+    System.out.println();
+
+    Collection<Integer> populacao = populacaoEstados.values();
+        String estadoMaiorPopulacao = "";
+        String estadoMenorPopulacao = "";
+        for (Map.Entry<String, Integer> entry : populacaoEstados.entrySet()) {
+            if (entry.getValue().equals(Collections.max(populacao))) estadoMaiorPopulacao = entry.getKey();
+            if (entry.getValue().equals(Collections.min(populacao))) estadoMenorPopulacao = entry.getKey();
+        }
+        System.out.printf("Exiba o estado com o menor população (%s) e seu respectivo valor (%d)\n",
+                estadoMenorPopulacao, Collections.min(populacao));
+        System.out.printf("Exiba o estado com a maior população (%s) e seu respectivo valor (%d)\n",
+                estadoMaiorPopulacao, Collections.max(populacao));
+        System.out.println();
+
+        int soma = 0;
+        Iterator<Integer> iterator = populacaoEstados.values().iterator();
+        while (iterator.hasNext()) {
+            soma += iterator.next();
+        }
+        System.out.println("Exiba a soma da população desses estados: " + soma);
+        System.out.println();
+
+        System.out.println("Exiba a média da população deste dicionário de estados: " + soma / populacaoEstados.size());
+        System.out.println();
+
+        System.out.println("Remova os estados com a população menor que 4.000.000: ");
+        Iterator<Integer> iterator2 = populacaoEstados.values().iterator();
+                while (iterator2.hasNext()) {
+                    if (iterator2.next() <= 4000000) iterator2.remove();
+                }
+                System.out.println(populacaoEstados);
+                System.out.println();
+        
+        System.out.println("Apague o dicionario de estados com suas respectivas populações estimadas: ");
+        populacaoEstados.clear();
+        System.out.println(populacaoEstados);
+        System.out.println();
+
+        System.out.println("Confira se a lista está vazia: " + populacaoEstados.isEmpty());
 }
 }
 
