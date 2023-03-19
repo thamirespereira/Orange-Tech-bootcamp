@@ -127,16 +127,17 @@ class ComparatorNomeGeneroTempoEpisodio implements Comparator<Serie>{
     }
 }
 
-class ComparatorGenero implements Comparator<Serie>{
-    @Override
-    public int compare(Serie s1, Series2){
-        int genero = s1.getGenero().compareTo(s2.getGenero);
-    }
-}
+//class ComparatorGenero implements Comparator<Serie>{
+//    @Override
+//    public int compare(Serie s1, Series2){
+//        int genero = s1.getGenero().compareTo(s2.getGenero);
+//    }
+//}
 
-class ComparatorTempoEpisodio implements Comparator<Serie>{
-    @Override
-    public int compare(Serie s1, Series2){
-        return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
-    }
-}
+//class ComparatorTempoEpisodio implements Comparator<Serie>{
+//    @Override
+//    public int compare(Serie s1, Series2){
+//        return Integer.compare(s1.getTempoEpisodio(), s2.getTempoEpisodio());
+//    }
+//}
+

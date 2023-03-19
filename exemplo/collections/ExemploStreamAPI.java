@@ -79,6 +79,7 @@ id = 3 - Contato = nome: Jon, numero: 1111;
         set1.addAll(agenda.entrySet());
         //imprimindo usando forEach
         set1.forEach(entry -> System.out.println(entry.getKey() + " - " + entry.getValue().getNome()));
+
     }
 }
 
